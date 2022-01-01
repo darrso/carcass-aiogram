@@ -1,2 +1,2 @@
 # YOUR TOKEN
-bToken = "1990075125:AAG89YNwBzflO9R9zq7h6AcyIO-62pfzkyA"
+bToken = "TOKEN"
