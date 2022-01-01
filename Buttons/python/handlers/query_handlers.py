@@ -1,6 +1,6 @@
 from aiogram import types, Dispatcher
 
-from just_bot.python.buttons.bttns import yes_no
+from Buttons.python.buttons.bttns import yes_no
 
 
 async def yes(query: types.CallbackQuery):
