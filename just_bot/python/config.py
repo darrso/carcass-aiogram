@@ -1,2 +1,0 @@
-# YOUR TOKEN
-bToken = "TOKEN"
