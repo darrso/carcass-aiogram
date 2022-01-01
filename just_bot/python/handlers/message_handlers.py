@@ -1,6 +1,6 @@
 from aiogram import types, Dispatcher
 
-from python.buttons.inline_bttns import start_bttn
+from just_bot.python.buttons.inline_bttns import start_bttn
 
 
 async def start_command(message: types.Message):
