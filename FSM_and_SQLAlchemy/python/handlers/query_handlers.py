@@ -11,7 +11,9 @@ async def end(query: types.CallbackQuery, state: FSMContext):
     await query.message.answer("Ok... Your answers:\n"
                                f"Name: {data['name']}\n"
                                f"Old: {data['old']}\n"
-                               f"Do u like living? Your answer: {data['living']}")
+                               f"Do u like living? Your answer: {data['living']}"
+                               f"\n\nIn order to see the answers to questions at any time - /ans\n"
+                               f"To delete answers to questions - /del")
     try:
         session.add(User(TgId=query.from_user.id, Name=data['name'], Old=data['old'], Living=data['living']))
         session.commit()
