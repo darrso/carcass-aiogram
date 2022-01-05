@@ -18,8 +18,8 @@ async def end(query: types.CallbackQuery, state: FSMContext):
         session.add(User(TgId=query.from_user.id, Name=data['name'], Old=data['old'], Living=data['living']))
         session.commit()
     except:
-        await query.message.answer('You have already answered the questions! You can view your answers with /ans')
-        session.rollback()  # Я НЕ УВЕРЕНА В ЭТОМ
+        await query.message.answer('<ERROR!!>\n'
+                                   'Try it again!')
 
     await state.finish()
 
