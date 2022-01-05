@@ -23,6 +23,7 @@ async def main():
     register_message_handlers(dp)
     register_query_handlers(dp)
 
+    # SET COMMANDS
     await set_commands(bot)
 
     await dp.start_polling()
