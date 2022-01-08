@@ -18,10 +18,6 @@ async def main():
     register_message_handlers(dp)
     register_query_handlers(dp)
 
-    await bot.set_my_commands(
-        BotCommand(command="/start", description='Start Command')  # start
-    )
-
     await dp.start_polling()
 
 
