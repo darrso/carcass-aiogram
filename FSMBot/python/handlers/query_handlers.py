@@ -1,7 +1,8 @@
 from aiogram import types, Dispatcher
 from aiogram.dispatcher import FSMContext
-
-from FSMBot.python.States.Questions import Questionss
+import sys
+sys.path.append("FSMBot")
+from python.States.Questions import Questionss
 
 
 async def end(query: types.CallbackQuery, state: FSMContext):

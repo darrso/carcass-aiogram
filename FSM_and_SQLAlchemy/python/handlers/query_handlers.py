@@ -1,8 +1,9 @@
 from aiogram import types, Dispatcher
 from aiogram.dispatcher import FSMContext
-
-from FSMBot.python.States.Questions import Questionss
-from FSM_and_SQLAlchemy.python.SQLite.connect import session, User
+import sys
+sys.path.append('FSM_and_SQLAlchemy')
+from python.States.Questions import Questionss
+from python.SQLite.connect import session, User
 
 
 async def end(query: types.CallbackQuery, state: FSMContext):

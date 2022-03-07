@@ -1,6 +1,7 @@
 from aiogram import types, Dispatcher
-
-from Buttons.python.buttons.bttns import yes_no
+import sys
+sys.path.append("Buttons")
+from python.buttons.bttns import yes_no
 
 
 async def yes(query: types.CallbackQuery):

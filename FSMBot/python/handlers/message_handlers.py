@@ -1,8 +1,10 @@
 from aiogram import types, Dispatcher
 from aiogram.dispatcher import FSMContext
-from FSMBot.python.States.Questions import Questionss
-from FSMBot.python.buttons.bttns import first_que
-from FSMBot.python.buttons.inline_bttns import third_ques
+import sys
+sys.path.append("FSMBot")
+from python.States.Questions import Questionss
+from python.buttons.bttns import first_que
+from python.buttons.inline_bttns import third_ques
 
 
 async def start_command(message: types.Message):
